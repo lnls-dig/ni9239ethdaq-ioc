@@ -1,0 +1,16 @@
+record(ai, "$(P)$(R)Scale-RB") {
+  field(DESC, "Channel Scale Readback")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(EGU, "A/V")
+  field(INP, "@ni9239acq.proto getScale $(PORT)")
+}
+
+record(ao, "$(P)$(R)Scale-SP") {
+  field(DESC, "Channel Scale Setpoint")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(EGU, "A/V")
+  field(OUT, "@ni9239acq.proto setScale $(PORT)")
+  field(FLNK, "$(P)$(R)Scale-RB")
+}

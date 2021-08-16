@@ -1,0 +1,40 @@
+record(ai, "$(P)$(R)Current$(CH)-Mon") {
+  field(DESC, "Channel Current $(CH)")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(EGU, "A")
+  field(INP, "@ni9239acq.proto getMeasure($(CH)) $(PORT)")
+}
+
+record(ai, "$(P)$(R)Gain$(CH)-RB") {
+  field(DESC, "Channel Gain Readback $(CH)")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(INP, "@ni9239acq.proto getGain($(CH)) $(PORT)")
+}
+
+record(ao, "$(P)$(R)Gain$(CH)-SP") {
+  field(DESC, "Channel Gain Setpoint $(CH)")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(OUT, "@ni9239acq.proto setGain($(CH)) $(PORT)")
+  field(FLNK, "$(P)$(R)Gain$(CH)-RB")
+}
+
+record(ai, "$(P)$(R)Offset$(CH)-RB") {
+  field(DESC, "Channel Offset Readback $(CH)")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(EGU, "A")
+  field(INP, "@ni9239acq.proto getOffset($(CH)) $(PORT)")
+}
+
+record(ao, "$(P)$(R)Offset$(CH)-SP") {
+  field(DESC, "Channel Offset Setpoint $(CH)")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(OUT, "@ni9239acq.proto setOffset($(CH)) $(PORT)")
+  field(EGU, "A")
+  field(FLNK, "$(P)$(R)Offset$(CH)-RB")
+}

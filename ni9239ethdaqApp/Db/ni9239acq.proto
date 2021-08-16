@@ -1,0 +1,41 @@
+TERMINATOR = CR LF;
+ExtraInput = Ignore;
+ReplyTimeout = 1000;
+
+getMeasure {
+    out "measure\$1?";
+    in "%f";
+}
+
+getGain {
+    out "gain\$1?";
+    in "%f";
+}
+
+setGain {
+    out "gain\$1 %g";
+    in "%*g";
+    #@init { getGain; }
+}
+
+getOffset {
+    out "offset\$1?";
+    in "%f";
+}
+
+setOffset {
+    out "offset\$1 %g";
+    in "%*g";
+    #@init { getOffset; }
+}
+
+getScale {
+    out "scale?";
+    in "%f";
+}
+
+setScale {
+    out "scale %g";
+    in "%*g";
+    #@init { getScale; }
+}
