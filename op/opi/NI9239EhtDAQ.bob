@@ -42,7 +42,7 @@
     <traces>
       <trace>
         <name>$(traces[0].y_pv)</name>
-        <y_pv>${P}${R}Current0-Mon</y_pv>
+        <y_pv>${P}${R}CurrentA-Mon</y_pv>
         <axis>0</axis>
         <trace_type>1</trace_type>
         <color>
@@ -56,7 +56,7 @@
       </trace>
       <trace>
         <name>$(traces[1].y_pv)</name>
-        <y_pv>${P}${R}Current1-Mon</y_pv>
+        <y_pv>${P}${R}CurrentB-Mon</y_pv>
         <axis>0</axis>
         <trace_type>1</trace_type>
         <color>
@@ -70,7 +70,7 @@
       </trace>
       <trace>
         <name>$(traces[2].y_pv)</name>
-        <y_pv>${P}${R}Current2-Mon</y_pv>
+        <y_pv>${P}${R}CurrentC-Mon</y_pv>
         <axis>0</axis>
         <trace_type>1</trace_type>
         <color>
@@ -84,7 +84,7 @@
       </trace>
       <trace>
         <name>$(traces[3].y_pv)</name>
-        <y_pv>${P}${R}Current3-Mon</y_pv>
+        <y_pv>${P}${R}CurrentD-Mon</y_pv>
         <axis>0</axis>
         <trace_type>1</trace_type>
         <color>
@@ -109,7 +109,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>gain0sp</name>
-    <pv_name>${P}${R}Gain0-SP</pv_name>
+    <pv_name>${P}${R}GainA-SP</pv_name>
     <x>340</x>
     <y>470</y>
     <height>30</height>
@@ -118,7 +118,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>gain1sp</name>
-    <pv_name>${P}${R}Gain1-SP</pv_name>
+    <pv_name>${P}${R}GainB-SP</pv_name>
     <x>340</x>
     <y>500</y>
     <height>30</height>
@@ -127,7 +127,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>gain2sp</name>
-    <pv_name>${P}${R}Gain2-SP</pv_name>
+    <pv_name>${P}${R}GainC-SP</pv_name>
     <x>340</x>
     <y>530</y>
     <height>30</height>
@@ -136,7 +136,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>gain3sp</name>
-    <pv_name>${P}${R}Gain3-SP</pv_name>
+    <pv_name>${P}${R}GainD-SP</pv_name>
     <x>340</x>
     <y>560</y>
     <height>30</height>
@@ -145,7 +145,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>offset0sp</name>
-    <pv_name>${P}${R}Offset0-SP</pv_name>
+    <pv_name>${P}${R}OffsetA-SP</pv_name>
     <x>580</x>
     <y>470</y>
     <height>30</height>
@@ -154,7 +154,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>offset1sp</name>
-    <pv_name>${P}${R}Offset1-SP</pv_name>
+    <pv_name>${P}${R}OffsetB-SP</pv_name>
     <x>580</x>
     <y>500</y>
     <height>30</height>
@@ -163,7 +163,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>offset2sp</name>
-    <pv_name>${P}${R}Offset2-SP</pv_name>
+    <pv_name>${P}${R}OffsetC-SP</pv_name>
     <x>580</x>
     <y>530</y>
     <height>30</height>
@@ -172,7 +172,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>offset3sp</name>
-    <pv_name>${P}${R}Offset3-SP</pv_name>
+    <pv_name>${P}${R}OffsetD-SP</pv_name>
     <x>580</x>
     <y>560</y>
     <height>30</height>
@@ -194,7 +194,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>gain0rb</name>
-    <pv_name>${P}${R}Gain0-RB</pv_name>
+    <pv_name>${P}${R}GainA-RB</pv_name>
     <x>450</x>
     <y>470</y>
     <height>30</height>
@@ -207,7 +207,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>gain1rb</name>
-    <pv_name>${P}${R}Gain1-RB</pv_name>
+    <pv_name>${P}${R}GainB-RB</pv_name>
     <x>450</x>
     <y>500</y>
     <height>30</height>
@@ -220,7 +220,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>gain2rb</name>
-    <pv_name>${P}${R}Gain2-RB</pv_name>
+    <pv_name>${P}${R}GainC-RB</pv_name>
     <x>450</x>
     <y>530</y>
     <height>30</height>
@@ -233,7 +233,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>gain3rb</name>
-    <pv_name>${P}${R}Gain3-RB</pv_name>
+    <pv_name>${P}${R}GainD-RB</pv_name>
     <x>450</x>
     <y>560</y>
     <height>30</height>
@@ -246,7 +246,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>offset0rb</name>
-    <pv_name>${P}${R}Offset0-RB</pv_name>
+    <pv_name>${P}${R}OffsetA-RB</pv_name>
     <x>690</x>
     <y>470</y>
     <height>30</height>
@@ -259,7 +259,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>offset1rb</name>
-    <pv_name>${P}${R}Offset1-RB</pv_name>
+    <pv_name>${P}${R}OffsetB-RB</pv_name>
     <x>690</x>
     <y>500</y>
     <height>30</height>
@@ -272,7 +272,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>offset2rb</name>
-    <pv_name>${P}${R}Offset2-RB</pv_name>
+    <pv_name>${P}${R}OffsetC-RB</pv_name>
     <x>690</x>
     <y>530</y>
     <height>30</height>
@@ -285,7 +285,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>offset3rb</name>
-    <pv_name>${P}${R}Offset3-RB</pv_name>
+    <pv_name>${P}${R}OffsetD-RB</pv_name>
     <x>690</x>
     <y>560</y>
     <height>30</height>
@@ -324,10 +324,10 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_3</name>
-    <text>ch0</text>
+    <text>A</text>
     <x>301</x>
     <y>477</y>
-    <width>30</width>
+    <width>13</width>
     <height>21</height>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -337,10 +337,10 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_4</name>
-    <text>ch3</text>
+    <text>D</text>
     <x>301</x>
     <y>567</y>
-    <width>30</width>
+    <width>13</width>
     <height>21</height>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -350,10 +350,10 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_5</name>
-    <text>ch1</text>
+    <text>B</text>
     <x>301</x>
     <y>507</y>
-    <width>30</width>
+    <width>13</width>
     <height>21</height>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -363,10 +363,10 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_6</name>
-    <text>ch2</text>
+    <text>C</text>
     <x>301</x>
     <y>537</y>
-    <width>30</width>
+    <width>13</width>
     <height>21</height>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
