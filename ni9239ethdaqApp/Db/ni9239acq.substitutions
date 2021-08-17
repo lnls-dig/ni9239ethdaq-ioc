@@ -1,7 +1,7 @@
 file db/ni9239acqperchannel.db {
-    pattern{CH}
-    {"0"}
-    {"1"}
-    {"2"}
-    {"3"}
+    pattern{CH, BPMCH}
+    {"0", "A"}
+    {"1", "C"}
+    {"2", "B"}
+    {"3", "D"}
 }
